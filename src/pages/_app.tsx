@@ -3,6 +3,8 @@ import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
+import Head from "next/head";
+import AppHeader from "~/components/AppHeader";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -10,7 +12,19 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Component {...pageProps} />
+      <Head>
+        <title>Library | Jakub Biniek</title>
+        <meta
+          name="description"
+          content="This is a documentation/library of my growth as a software developer"
+        />
+      </Head>
+      <div className=" flex flex-col bg-gray-50">
+        <AppHeader />
+        <div className="container mx-auto min-h-screen">
+          <Component {...pageProps} />
+        </div>
+      </div>
     </SessionProvider>
   );
 };
