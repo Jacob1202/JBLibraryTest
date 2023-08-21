@@ -5,6 +5,7 @@ import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import Head from "next/head";
 import AppHeader from "~/components/AppHeader";
+import { ThemeProvider } from "~/components/ThemeProvider";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -19,12 +20,14 @@ const MyApp: AppType<{ session: Session | null }> = ({
           content="This is a documentation/library of my growth as a software developer"
         />
       </Head>
-      <div className=" flex flex-col bg-gray-50">
-        <AppHeader />
-        <div className="container mx-auto min-h-screen">
-          <Component {...pageProps} />
+      <ThemeProvider attribute="class">
+        <div className=" flex flex-col bg-gray-50">
+          <AppHeader />
+          <div className="container mx-auto min-h-screen">
+            <Component {...pageProps} />
+          </div>
         </div>
-      </div>
+      </ThemeProvider>
     </SessionProvider>
   );
 };
