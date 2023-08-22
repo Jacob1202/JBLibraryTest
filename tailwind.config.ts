@@ -10,13 +10,10 @@ export default {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      transitionDelay: {
-        '5000': '5000ms',
-      },
       keyframes: {
         move: {
-          '0%': { transform: 'translate(0,0)' },
-          '100%': { transform: 'translate(0,calc(var(--s)*var(--h) * -1px))' },
+          from: { transform: 'translate(0,0)' },
+          to: { transform: 'translate(0,calc(var(--s)*var(--h) * -1px))' },
         },
         liMove: {
           '0%': { opacity: "1", transform: 'translate(0,0)' },
@@ -25,10 +22,15 @@ export default {
           '40%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
           '100%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
         },
+        slideUpAndFade: {
+          from: { opacity: "0", transform: 'translateY(2px)' },
+          to: { opacity: "1", transform: 'translateY(0)' },
+        },
       },
       animation: {
         move: 'move calc(var(--speed) * var(--s)) steps(var(--s)) infinite',
         liMove: 'liMove calc(var(--speed)) infinite',
+        slideUpAndFade: 'slideUpAndFade 600ms cubic-bezier(0.16, 1, 0.3, 1)',
       }
     },
   },
