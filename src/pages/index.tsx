@@ -3,7 +3,7 @@ import HeroSection from "~/components/HeroSection";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-start bg-white dark:bg-black">
+      <main className="flex min-h-screen flex-col items-center justify-start">
         <HeroSection />
       </main>
     </>

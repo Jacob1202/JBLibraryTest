@@ -20,8 +20,8 @@ export default {
         },
         liMove: {
           '0%': { opacity: "1", transform: 'translate(0,0)' },
-          '5%' :{opacity: "0"},
-          '15%' :{opacity: "0"},
+          '10%' :{opacity: "0"},
+          '20%' :{opacity: "0"},
           '40%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
           '100%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
         },

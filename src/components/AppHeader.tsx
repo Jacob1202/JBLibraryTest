@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 export default function AppHeader() {
   return (
@@ -16,8 +17,9 @@ export default function AppHeader() {
           </s>
         </div>
       </div>
-      <div>
-        <Link href="/">Login</Link>
+      <div className="flex gap-2">
+        <button className={`rounded-md bg-gray-200 px-4 py-2`}>Login</button>
+        <ThemeSwitch />
       </div>
     </nav>
   );

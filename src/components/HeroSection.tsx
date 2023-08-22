@@ -1,6 +1,5 @@
 import Link from "next/link";
 import WelcomeText from "./WelcomeText";
-import { ThemeSwitch } from "./ThemeSwitch";
 
 export default function HeroSection() {
   return (
@@ -26,7 +25,6 @@ export default function HeroSection() {
           </button>
           <button>
             <Link href="/dashboard">GitHub</Link>
-            <ThemeSwitch />
           </button>
         </div>
       </div>

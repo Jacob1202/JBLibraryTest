@@ -21,7 +21,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         />
       </Head>
       <ThemeProvider attribute="class">
-        <div className=" flex flex-col bg-gray-50">
+        <div className="2s flex flex-col bg-white transition-all ease-in-out dark:bg-zinc-900">
           <AppHeader />
           <div className="container mx-auto min-h-screen">
             <Component {...pageProps} />
