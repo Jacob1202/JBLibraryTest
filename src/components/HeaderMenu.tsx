@@ -18,9 +18,9 @@ export default function HeaderMenu() {
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="absolute left-0 top-0 w-[300px] bg-white shadow-2xl data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
               <ul className="m-0 grid w-[300px] list-none px-3 py-2">
-                <li className=".3s rounded-md px-3 py-1 transition-all ease-in-out hover:bg-gray-100">
+                <li className=".3s rounded-md px-3 py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/">
-                    <h5 className="text-md font-semibold text-black dark:text-white">
+                    <h5 className="text-md font-semibold text-black dark:text-white ">
                       Machine Learning
                     </h5>
                     <p className="mb-1 text-sm text-gray-700 dark:text-gray-300">
@@ -28,7 +28,7 @@ export default function HeaderMenu() {
                     </p>
                   </Link>
                 </li>
-                <li className=".3s rounded-md px-2 py-1  transition-all ease-in-out hover:bg-gray-100">
+                <li className=".3s rounded-md px-2 py-1  transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
                       ASP .NET development
@@ -38,7 +38,7 @@ export default function HeaderMenu() {
                     </p>
                   </Link>
                 </li>
-                <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100">
+                <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
                       React
@@ -62,7 +62,7 @@ export default function HeaderMenu() {
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="absolute left-0 top-0 w-[300px] data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
               <ul className="m-0 grid w-[300px] list-none px-3 py-2">
-                <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100">
+                <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
                       Showcase
