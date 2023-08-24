@@ -3,7 +3,7 @@ import HeaderMenu from "./HeaderMenu";
 
 export default function AppHeader() {
   return (
-    <nav className="container mx-auto flex h-16 items-center justify-between">
+    <nav className="container mx-auto flex h-20 items-center justify-between">
       <div className="flex items-center justify-center space-x-4">
         <div className="text-md font-semibold">JBLibrary</div>
         <HeaderMenu />

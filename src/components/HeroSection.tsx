@@ -1,4 +1,3 @@
-import Link from "next/link";
 import WelcomeText from "./WelcomeText";
 
 export default function HeroSection() {
@@ -7,13 +6,15 @@ export default function HeroSection() {
       <div className="mt-40 flex flex-col items-center justify-center gap-2">
         <div className="flex items-center justify-center gap-2">
           <WelcomeText />
-          <h1 className="text-6xl font-semibold">I&#39;m Jakub</h1>
+          <h1 className="font-semibold sm:text-3xl md:text-6xl">
+            I&#39;m Jakub
+          </h1>
         </div>
         <div className="text-center">
-          <h3 className="-translate-y-7 text-6xl font-semibold leading-[90px]">
+          <h3 className="-translate-y-7 font-semibold leading-[90px] sm:text-3xl md:text-6xl">
             and this is my documentation
           </h3>
-          <h3 className="-translate-y-7  text-2xl  text-gray-400 dark:text-gray-500">
+          <h3 className="text-md -translate-y-4 text-gray-400 dark:text-gray-500  sm:text-lg md:text-2xl">
             I&#39;m creating this page to document my growth and what I&#39;ve
             learned.
             <br /> Study concepts and implementation with me.
