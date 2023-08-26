@@ -6,7 +6,7 @@ export default function Dotnet() {
       <div className="mt-16 flex min-h-screen flex-row items-start justify-start px-4 sm:px-0">
         {/* Scroll Area */}
         <div className="flex flex-col">
-          <h2 className="mb-4 font-semibold">.NET Development</h2>
+          <h2 className="mb-4 font-semibold">Machine Learning</h2>
           <SideMenu data={links} />
         </div>
       </div>
@@ -16,27 +16,11 @@ export default function Dotnet() {
 
 const links = [
   {
-    name: "Endpoints",
+    name: "Linear Regression",
     href: "/",
   },
   {
-    name: "Authorization",
-    href: "/",
-  },
-  {
-    name: "REST API",
-    href: "/",
-  },
-  {
-    name: "Email service",
-    href: "/",
-  },
-  {
-    name: "Internationalization",
-    href: "/",
-  },
-  {
-    name: "Best practices",
+    name: "ROC",
     href: "/",
   },
 ];
