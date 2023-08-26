@@ -15,12 +15,23 @@ export default {
           from: { transform: 'translate(0,0)' },
           to: { transform: 'translate(0,calc(var(--s)*var(--h) * -1px))' },
         },
+        moveMobile: {
+          from: { transform: 'translate(0,0)' },
+          to: { transform: 'translate(0,calc(var(--s)*var(--hm) * -1px))' },
+        },
         liMove: {
           '0%': { opacity: "1", transform: 'translate(0,0)' },
           '10%' :{opacity: "0"},
           '20%' :{opacity: "0"},
           '40%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
           '100%': { opacity: "1", transform: 'translate(0, calc(var(--h) * -1px))' },
+        },
+        liMoveMobile: {
+          '0%': { opacity: "1", transform: 'translate(0,0)' },
+          '10%' :{opacity: "0"},
+          '20%' :{opacity: "0"},
+          '40%': { opacity: "1", transform: 'translate(0, calc(var(--hm) * -1px))' },
+          '100%': { opacity: "1", transform: 'translate(0, calc(var(--hm) * -1px))' },
         },
         slideUpAndFade: {
           from: { opacity: "0", transform: 'translateY(2px)' },
@@ -62,6 +73,8 @@ export default {
       animation: {
         move: 'move calc(var(--speed) * var(--s)) steps(var(--s)) infinite',
         liMove: 'liMove calc(var(--speed)) infinite',
+        moveMobile: 'moveMobile calc(var(--speedMobile) * var(--s)) steps(var(--s)) infinite',
+        liMoveMobile: 'liMoveMobile calc(var(--speedMobile)) infinite',
         slideUpAndFade: 'slideUpAndFade 600ms cubic-bezier(0.16, 1, 0.3, 1)',
         scaleIn: 'scaleIn 200ms ease',
         scaleOut: 'scaleOut 200ms ease',

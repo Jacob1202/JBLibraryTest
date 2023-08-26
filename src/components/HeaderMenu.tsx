@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function HeaderMenu() {
   return (
-    <div className="w-full translate-y-4 md:translate-y-0">
-      <NavigationMenu.Root className="relative z-10 flex w-full justify-center sm:w-[300px]">
-        <NavigationMenu.List className="center m-0 flex list-none p-1">
+    <div className="absolute top-20 z-10 items-center sm:relative sm:top-0 md:translate-y-0">
+      <NavigationMenu.Root className="relative z-10 flex w-full justify-center sm:w-[300]">
+        <NavigationMenu.List className="flex list-none items-center justify-between ">
           <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="text-md group flex select-none items-center justify-between gap-1 rounded-md px-3 py-2 font-medium leading-none  outline-none">
+            <NavigationMenu.Trigger className="text-md group flex select-none items-center justify-between gap-1 rounded-md  py-2 font-medium leading-none  outline-none">
               Documentation{" "}
               <CaretDownIcon
-                className="relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+                className="relative top-[1px] transition-transform duration-[300] ease-in group-data-[state=open]:-rotate-180"
                 aria-hidden
               />
             </NavigationMenu.Trigger>

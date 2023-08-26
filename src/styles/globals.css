@@ -6,4 +6,10 @@
   --s: 6;
   --h: 120;
   --speed: 7s;
+  --speedMobile: 5s;
+  --hm: 60;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
 }

@@ -3,7 +3,7 @@ import SideMenu from "~/components/SideMenu";
 export default function Dotnet() {
   return (
     <>
-      <div className="flex-row mt-10 flex min-h-screen items-start justify-start">
+      <div className="mx-[2rem] mt-10 flex min-h-screen flex-row items-start justify-start sm:mx-0">
         {/* Scroll Area */}
         <div className="flex flex-col">
           <h2 className="mb-4 font-semibold">.NET Development</h2>

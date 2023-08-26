@@ -22,11 +22,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
         />
       </Head>
       <ThemeProvider attribute="class">
-        <div className="2s flex flex-col bg-white transition-all ease-in-out dark:bg-zinc-900">
+        <div className="2s container mx-auto flex min-h-screen flex-col bg-white transition-all ease-in-out dark:bg-zinc-900">
           <AppHeader />
-          <div className="container mx-auto min-h-screen">
-            <Component {...pageProps} />
-          </div>
+          <Component {...pageProps} />
           <AppFooter />
         </div>
       </ThemeProvider>
