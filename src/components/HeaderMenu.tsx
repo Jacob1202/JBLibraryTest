@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function HeaderMenu() {
   return (
-    <div className="w-full">
-      <NavigationMenu.Root className="relative z-[1] flex w-[300px] justify-center">
+    <div className="w-full translate-y-4 md:translate-y-0">
+      <NavigationMenu.Root className="relative z-10 flex w-full justify-center sm:w-[300px]">
         <NavigationMenu.List className="center m-0 flex list-none p-1">
           <NavigationMenu.Item>
             <NavigationMenu.Trigger className="text-md group flex select-none items-center justify-between gap-1 rounded-md px-3 py-2 font-medium leading-none  outline-none">
@@ -16,7 +16,7 @@ export default function HeaderMenu() {
                 aria-hidden
               />
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="absolute left-0 top-0 w-[300px] bg-white shadow-2xl data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
+            <NavigationMenu.Content className="absolute left-0 top-0 z-10 w-full bg-white shadow-2xl data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800 sm:w-[300px]">
               <ul className="m-0 grid w-[300px] list-none px-3 py-2">
                 <li className=".3s rounded-md px-3 py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/">
@@ -29,7 +29,7 @@ export default function HeaderMenu() {
                   </Link>
                 </li>
                 <li className=".3s rounded-md px-2 py-1  transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
-                  <Link href="/">
+                  <Link href="/dotnet">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
                       ASP .NET development
                     </h5>
@@ -60,10 +60,10 @@ export default function HeaderMenu() {
                 aria-hidden
               />
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="absolute left-0 top-0 w-[300px] data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
+            <NavigationMenu.Content className="absolute left-0 top-0 z-10 w-[300px] data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
               <ul className="m-0 grid w-[300px] list-none px-3 py-2">
                 <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
-                  <Link href="/">
+                  <Link href="/design">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
                       Showcase
                     </h5>
