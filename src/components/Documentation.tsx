@@ -11,7 +11,7 @@ type DocumentationProps = {
 
 export default function Documentation({ title, data }: DocumentationProps) {
   return (
-    <div className="flex w-full flex-col px-4">
+    <div className="flex w-full flex-col pl-4">
       <h1 className="text-2xl font-semibold sm:text-4xl">{title}</h1>
       <div className="flex w-full flex-col gap-6">
         {data?.map((section) => (
