@@ -6,7 +6,7 @@ type SideMenuProps = {
 
 export default function SideMenu({ data }: SideMenuProps) {
   return (
-    <ScrollArea.Root className="h-[500px] w-[200px] overflow-hidden bg-gray-100 dark:bg-zinc-800">
+    <ScrollArea.Root className="h-fit w-full overflow-hidden bg-gray-100 dark:bg-zinc-800 sm:w-[200px]">
       <ScrollArea.Viewport className="h-full w-full">
         <div className="px-5 py-4">
           <div className="text-md font-medium">Web API</div>

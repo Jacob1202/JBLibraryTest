@@ -1,0 +1,12 @@
+export const dataML = [
+    {
+        id: 1,
+        sectionTitle: "Building your first model",
+        sectionText: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio fugiat quis quam aperiam. Inventore veritatis laboriosam itaque adipisci fuga, perferendis corrupti rerum blanditiis, doloribus vitae quasi nesciunt a tempora expedita quidem quaerat, pariatur possimus eaque odit atque! Excepturi aspernatur reprehenderit nulla quo, corrupti enim tenetur ab officiis nam. Non sequi exercitationem veritatis eum praesentium, officia veniam eos repudiandae ex ipsam aliquid possimus suscipit voluptatibus obcaecati in tenetur vel, dignissimos quisquam libero minus incidunt provident eaque? Minus architecto quam velit? Reiciendis atque mollitia voluptates libero officia! Quod perspiciatis non numquam soluta labore, beatae, fugiat dolores error ut natus facere ratione porro impedit incidunt fuga magni recusandae quae! Laboriosam, quo obcaecati deleniti nulla tempore quod voluptatum et quidem quam, quis officia quas labore nisi repudiandae porro ab. Natus obcaecati, autem quod porro veniam impedit est odio tenetur minus quis quae nihil neque aut ea eaque odit totam excepturi ratione unde quasi."
+    },
+    {
+        id: 2,
+        sectionTitle: "Understanding model validation",
+        sectionText: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium optio fugiat quis quam aperiam. Inventore veritatis laboriosam itaque adipisci fuga, perferendis corrupti rerum blanditiis, doloribus vitae quasi nesciunt a tempora expedita quidem quaerat, pariatur possimus eaque odit atque! Excepturi aspernatur reprehenderit nulla quo, corrupti enim tenetur ab officiis nam. Non sequi exercitationem veritatis eum praesentium, officia veniam eos repudiandae ex ipsam aliquid possimus suscipit voluptatibus obcaecati in tenetur vel, dignissimos quisquam libero minus incidunt provident eaque? Minus architecto quam velit? Reiciendis atque mollitia voluptates libero officia! Quod perspiciatis non numquam soluta labore, beatae, fugiat dolores error ut natus facere ratione porro impedit incidunt fuga magni recusandae quae! Laboriosam, quo obcaecati deleniti nulla tempore quod voluptatum et quidem quam, quis officia quas labore nisi repudiandae porro ab. Natus obcaecati, autem quod porro veniam impedit est odio tenetur minus quis quae nihil neque aut ea eaque odit totam excepturi ratione unde quasi."
+    }
+]

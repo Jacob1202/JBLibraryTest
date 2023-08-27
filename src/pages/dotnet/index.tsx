@@ -1,3 +1,4 @@
+import Documentation from "~/components/Documentation";
 import SideMenu from "~/components/SideMenu";
 
 export default function Dotnet() {
@@ -6,9 +7,10 @@ export default function Dotnet() {
       <div className="mt-16 flex min-h-screen flex-row items-start justify-start px-4 sm:px-0">
         {/* Scroll Area */}
         <div className="flex flex-col">
-          <h2 className="mb-4 font-semibold">.NET Development</h2>
           <SideMenu data={links} />
         </div>
+        {/* Documentation content */}
+        <Documentation title={".NET development"} />
       </div>
     </>
   );
