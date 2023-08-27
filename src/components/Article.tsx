@@ -9,7 +9,7 @@ type DocumentationProps = {
   }[];
 };
 
-export default function Documentation({ title, data }: DocumentationProps) {
+export default function Article({ title, data }: DocumentationProps) {
   return (
     <div className="flex w-full flex-col pl-4">
       <h1 className="text-2xl font-semibold sm:text-4xl">{title}</h1>
