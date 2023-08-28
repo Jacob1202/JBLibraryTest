@@ -1,12 +1,6 @@
 import Head from "next/head";
-import { getAllPosts } from "~/lib/articles";
-import type PostType from "~/lib/types";
 
-type Props = {
-  allPosts: PostType[];
-};
-
-export default function MachineLearning({ allPosts }: Props) {
+export default function MachineLearning() {
   return (
     <>
       <Head>
@@ -24,19 +18,3 @@ export default function MachineLearning({ allPosts }: Props) {
     </>
   );
 }
-
-// eslint-disable-next-line @typescript-eslint/require-await
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "tags",
-    "excerpt",
-  ]);
-
-  return {
-    props: { allPosts },
-  };
-};
