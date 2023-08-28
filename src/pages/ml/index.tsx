@@ -20,9 +20,6 @@ export default function MachineLearning({ allPosts }: Props) {
         <h1 className="text-2xl font-semibold sm:text-4xl">
           Machine Learning Library
         </h1>
-        {allPosts.map((item) => (
-          <div key={item.id}>{item.tags}</div>
-        ))}
       </div>
     </>
   );
